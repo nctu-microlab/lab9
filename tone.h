@@ -1,5 +1,3 @@
-#pragma once
-
 #define TONE_ON 1
 #define TONE_OFF 0
 
@@ -17,6 +15,8 @@
 #define TONE_Bb 3729
 #define TONE_B 3951
 
+#define TONE(T,OFFSET) (T >> (7-(OFFSET)))
+
 
 void tone_init();
 
@@ -25,4 +25,4 @@ void tone_init();
 void tone_onoff(bit on_off);
 
 /* Example: tone_set(TONE_A, 4) to set tone to A4. */
-void tone_set(unsigned short tone, unsigned char offset);
+void tone_set(unsigned short tone);

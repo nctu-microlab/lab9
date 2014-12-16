@@ -30,7 +30,7 @@ Sheet tos_sheet = {
 };
 
 Sheet *sheet[] = {
-	bee_sheet
+	bee_sheet, tos_sheet
 };
 
 unsigned short next_note;
